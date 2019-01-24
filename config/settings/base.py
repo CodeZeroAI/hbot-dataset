@@ -66,7 +66,11 @@ THIRD_PARTY_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'import_export',
+    'django_filters',
     'rest_framework',
+    'hbot_dataset.vectors',
+    'hbot_dataset.targets',
 ]
 LOCAL_APPS = [
     'hbot_dataset.users.apps.UsersAppConfig',
@@ -269,3 +273,7 @@ SOCIALACCOUNT_ADAPTER = 'hbot_dataset.users.adapters.SocialAccountAdapter'
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 100
+}
