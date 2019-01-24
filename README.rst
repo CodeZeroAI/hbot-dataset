@@ -108,4 +108,20 @@ See detailed `cookiecutter-django Docker documentation`_.
 .. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
 
 
+Sample
+------
+
+Make file as follow in csv and upload file in the admin page
+`target.csv`
+id,name
+4,inform
+3,goodbye
+2,greeting
+1,trash
+
+`text-vector.csv`
+id,text,target
+2,2342923[9i9iq43[,1
+1,Hi,2
+4,hello,2
 
